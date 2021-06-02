@@ -1,5 +1,5 @@
 ZSH_THEME="robbyrussell"
-
+source ./oh-my-zsh.sh
 go env -w GOPRIVATE='*github.com/github/*'
 git config --global --add url."git@github.com:".insteadOf "https://github.com/"
 
