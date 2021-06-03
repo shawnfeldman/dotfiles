@@ -7,6 +7,7 @@ git config --global core.editor "vim"
 touch ~/gotmydots.txt
 
 source .bash_profile
+source .zshrc
 
 if [[ -d "/workspaces/github" ]]; then
   export IS_GH_GH=true
