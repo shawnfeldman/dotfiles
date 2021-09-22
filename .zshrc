@@ -29,3 +29,4 @@ function killdockers {
     docker kill $(docker ps -q)
     docker rm $(docker ps -a -q)
 }
+export PATH=~/go/bin:$PATH 
