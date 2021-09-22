@@ -3,8 +3,8 @@
 
 set -x
 
-git config --global core.editor "vim"
-touch ~/gotmydots.txt
+#git config --global core.editor "vim"
+#touch ~/gotmydots.txt
 
 source .bash_profile
 source .zshrc
