@@ -21,6 +21,9 @@ function gh-setup {
     dbprepare
 }
 
+function ngrok_run{
+     ngrok http -region=us -hostname=shawnfeldman.ngrok.io 8000
+}
 function prune {
      git prune
      git gc
