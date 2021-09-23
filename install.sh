@@ -10,6 +10,8 @@ unzip ngrok-stable-linux-amd64.zip -d
 mkdir .ngrok2
 touch .ngrok2/ngrok.yml
 
+
+
 source .bash_profile
 source .zshrc
 
