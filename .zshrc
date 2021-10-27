@@ -37,7 +37,10 @@ function clone_internal {
   git clone https://username:${GH_GH_PAT}@github.com/$1/$2 /workspaces/$2
 }
 
-
+function get_ngrok {
+  wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
+  unzip ngrok-stable-linux-amd64.zip -d 
+}
 export PATH=~/go/bin:$PATH 
 
 
