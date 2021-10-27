@@ -30,3 +30,5 @@ export PATH=~/go/bin:$PATH
 function go_env {
   go env -w GOPRIVATE='*github.com/github/*'
 }
+
+go_env
