@@ -5,7 +5,7 @@ ZSH_THEME="robbyrussell"
 alias greset="git reset --hard @{u}"
 
 function ngrok_run {
-     ngrok http -region=us -hostname=shawnfeldman.ngrok.io 8000
+     ~/ngrok http -region=us -hostname=shawnfeldman.ngrok.io 8000
 }
 function prune {
      git prune
