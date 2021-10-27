@@ -11,4 +11,4 @@ set -x
 #   bin/setup-codespaces
 # fi
 
-cat .zshrc > ~/.zshrc
+# cat .zshrc > ~/.zshrc
