@@ -21,7 +21,7 @@ function gh-setup {
     dbprepare
 }
 
-function ngrok_run{
+function ngrok_run {
      ngrok http -region=us -hostname=shawnfeldman.ngrok.io 8000
 }
 function prune {
@@ -33,7 +33,7 @@ function killdockers {
     docker rm $(docker ps -a -q)
 }
 
-function clone_internal{
+function clone_internal { 
   git clone https://username:${GH_GH_PAT}@github.com/$1/$2 /workspaces/$2
 }
 
