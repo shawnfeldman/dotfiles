@@ -10,3 +10,5 @@ set -x
 #   cd "/workspaces/github"
 #   bin/setup-codespaces
 # fi
+
+cat .zshrc > ~/.zshrc
