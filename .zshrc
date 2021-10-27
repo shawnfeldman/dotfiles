@@ -1,6 +1,7 @@
-set -x
+# set -x
 ZSH_THEME="robbyrussell"
-git config --global --add url."git@github.com:".insteadOf "https://github.com/"
+# git config --global --add url."git@github.com:".insteadOf "https://github.com/"
+
 alias greset="git reset --hard @{u}"
 
 function ngrok_run {
@@ -25,4 +26,7 @@ function get_ngrok {
 }
 
 export PATH=~/go/bin:$PATH 
-go env -w GOPRIVATE='*github.com/github/*'
+
+function go_env {
+  go env -w GOPRIVATE='*github.com/github/*'
+}
