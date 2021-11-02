@@ -2,6 +2,7 @@
 ZSH_THEME="robbyrussell"
 # git config --global --add url."git@github.com:".insteadOf "https://github.com/"
 
+source $ZSH/oh-my-zsh.sh
 alias greset="git reset --hard @{u}"
 
 function ngrok_run {
@@ -36,3 +37,4 @@ function get_ginkgo {
   go get github.com/onsi/gomega/...
 }
 go_env
+git config pull.rebase true 
