@@ -9,6 +9,7 @@ DOTFILESDIR="$(pwd -P)"
 ln -sf "$DOTFILESDIR" "$HOME/.dotfiles"
 cat "$DOTFILESDIR/.bashrc" >> "$HOME/.bashrc"
 cat "$DOTFILESDIR/.zshrc" >> "$HOME/.zshrc"
+cat "$DOTFILESDIR/.netrc" >> "$HOME/.netrc"
 
 if [[ -d "/workspaces/github" ]]; then
   export IS_GH_GH=true
