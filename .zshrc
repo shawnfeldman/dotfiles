@@ -25,8 +25,8 @@ function go_env {
 }
 
 
-go_env
-git config pull.rebase true 
+# go_env
+# git config pull.rebase true 
 
 export GOPROXY=https://goproxy.githubapp.com/mod,https://proxy.golang.org/,direct
 export GOPRIVATE=
