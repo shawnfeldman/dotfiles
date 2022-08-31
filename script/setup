@@ -9,7 +9,7 @@ DOTFILESDIR="$(pwd -P)"
 ln -sf "$DOTFILESDIR" "$HOME/.dotfiles"
 cat "$DOTFILESDIR/.bashrc" >> "$HOME/.bashrc"
 cat "$DOTFILESDIR/.zshrc" >> "$HOME/.zshrc"
-echo "machine goproxy.githubapp.com login nobody password ${GITHUB_TOKEN}" >> "${HOME}/.netrc"
+echo "machine goproxy.githubapp.com login nobody password ${GH_GH_PAT}" >> "${HOME}/.netrc"
 
 if [[ -d "/workspaces/github" ]]; then
   export IS_GH_GH=true
