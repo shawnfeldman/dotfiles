@@ -24,9 +24,11 @@ function go_env {
   go env -w GOPRIVATE='*github.com/github/*'
 }
 
-function get_ginkgo {
-  go get github.com/onsi/ginkgo/ginkgo
-  go get github.com/onsi/gomega/...
-}
+
 go_env
 git config pull.rebase true 
+
+export GOPROXY=https://goproxy.githubapp.com/mod,https://proxy.golang.org/,direct
+export GOPRIVATE=
+export GONOPROXY=
+export GONOSUMDB=github.com/github/*
