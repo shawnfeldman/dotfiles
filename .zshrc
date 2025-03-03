@@ -32,3 +32,5 @@ export GOPROXY=https://goproxy.githubapp.com/mod,https://proxy.golang.org/,direc
 export GOPRIVATE=
 export GONOPROXY=
 export GONOSUMDB=github.com/github/*
+
+git config --global --add --bool push.autoSetupRemote true
